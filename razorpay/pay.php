@@ -1,11 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/config.php";
-require_once _CONN;
 require('config.php');
 require('Razorpay.php');
 require_once 'common.php';
 
-// for testing purpose
+// test data
 $Sub_Admin_ID = "1010101010";
 $acc_type = "acc_type";
 $Group = "group_name";
@@ -29,7 +28,7 @@ $api = new Api($keyId, $keySecret);
 
 $n = strtoupper($name);
 
-$toValue = $_GET['total'];
+$toValue = "1000"; // Test Amount
 $message = "Paid";
 $razorpayPaymentId = "";
 $paymentStatus = "PENDING";
