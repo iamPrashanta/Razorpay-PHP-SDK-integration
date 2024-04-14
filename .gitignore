@@ -1,2 +1,5 @@
+composer.lock
+phpunit.xml
 vendor/
-.htaccess.txt
+reports/
+**/.DS_Store
